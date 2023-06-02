@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+const int n=10;
+
+
+cout<<"tabliczka mnozenia"<<endl;
+cout<<endl;
+int wiersze=1;
+while(wiersze<=10){
+        int kolumny=1;
+    while(kolumny<=10){
+      cout<<wiersze*kolumny<<"\t";
+    kolumny++;
+    }
+    wiersze++;
+    cout<<endl;
+}
+
+
+    return 0;
+}

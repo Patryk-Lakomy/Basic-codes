@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+void zamianaArgumentu(int x){
+    int suma;
+   suma=x+5;
+cout<<suma<<endl;
+}
+int main(){
+    int y;
+cout<<"Podaj y"<<endl;
+cin>>y;
+zamianaArgumentu(y);
+
+
+return 0;
+
+
+
+}

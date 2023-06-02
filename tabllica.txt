@@ -1,0 +1,24 @@
+n=int(input("ilu ma być wartościowa lista ksiazki "))
+ksiazki=[0]*n
+for i in range(n):
+    ksiazki[i]=str(input("wprowadz ksiazki do rejestru "))
+piosenki_oraz_ksiazki=[]
+m=int(input("ilu ma być wartościowa lista piosenki "))
+piosenki=[0]*m
+for i in range(m):
+    piosenki[i]=str(input("teraz wprowdz piosenki do rejestru "))
+x=str(input("który index ksiazek chcesz sprawdzić? "))
+y=str(input("który index piosenek chcesz sprawdzić? "))
+print(ksiazki)
+print(len(ksiazki))
+print(piosenki)
+print(len(piosenki))
+print(ksiazki[:4])
+print(piosenki[3:])
+print(ksiazki.index(x))
+print(piosenki.index(y))
+piosenki.append("Dni których nie znamy")
+ksiazki.extend(piosenki)
+piosenki_oraz_ksiazki.extend(ksiazki)
+print(piosenki_oraz_ksiazki)
+print("Nad niemnem" in piosenki_oraz_ksiazki)

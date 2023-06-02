@@ -1,0 +1,68 @@
+#include <iostream>
+
+using namespace std;
+
+float dodawanie(float a,float b){
+float suma=a+b;
+return suma;
+}
+float odejmowanie(float a,float b){
+float roznica=a-b;
+return roznica;
+}
+float mnozenie(float a,float b){
+float iloczyn=a*b;
+return iloczyn;
+
+}
+float dzielenie(float a,float b){
+float iloraz;
+if(b==0){
+cout<<"nie mozna wykonac dzialania"<<endl;
+}
+else{iloraz=a/b;}
+return iloraz;
+}
+
+
+int main()
+{
+ float a,b;
+ int zmienna;
+ cout<<"witamy w kalkulatorze 2020"<<endl;
+ do{
+ cout<<"podaj 2 liczby na ktorych chesz pracowac"<<endl;
+ cin>>a;
+ cin>>b;
+ cout<<"prosimy o wybranie akcji ktore chcesz wykonac"<<endl;
+ cout<<"do wyboru jest"<<endl;
+ cout<<"1.dodawanie 2.odejmowanie 3.mnozenie 4.dzielenie 5.wyjscie"<<endl;
+ cin>>zmienna;
+ switch(zmienna)
+ {
+ case 1:
+     cout<<"wynikiem dodawania jest "<<dodawanie(a,b)<<endl;
+     break;
+ case 2:
+     cout<<"wynikiem odejmowania jest "<<odejmowanie(a,b)<<endl;
+     break;
+ case 3:
+     cout<<"wynikiem mnozenia jest "<<mnozenie(a,b)<<endl;
+     break;
+ case 4:
+     cout<<"wynikiem dzielenia jest "<<dzielenie(a,b)<<endl;
+     break;
+ }
+
+ }while(zmienna<5);
+ cout<<"dziekujemy za skorzystanie naszego programu"<<endl;
+
+
+
+
+
+
+
+
+
+}

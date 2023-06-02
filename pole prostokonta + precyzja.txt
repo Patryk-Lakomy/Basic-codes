@@ -1,0 +1,25 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+float a,b,pole;
+
+int pole_prostokonta(){
+cout<<"program oblicza pole prostokonta"<<endl;
+cout<<"wprowadz wartosc boku a"<<endl;
+cin>>a;
+cout<<"wprowadz wartosc boku b"<<endl;
+cin>>b;
+pole=a*b;
+cout<<fixed<<setprecision(2);
+cout<<"Pole prostokonta wynosi "<<pole<<endl;
+}
+
+int main(){
+pole_prostokonta();
+
+
+
+
+return 0;
+}

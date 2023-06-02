@@ -1,0 +1,47 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+const int n=50;
+int i,tablica[n],suma=0 ,srednia ,najwieksza=tablica[0], najmniejsza=tablica[0];
+cout<<"powinna wypisac 50 wartosci"<<endl;
+for(i=0;i<=n;i++){
+   tablica[i]=i;
+}
+for(i=0;i<=n;i++){
+   cout<<tablica[i]<<endl;
+}
+
+
+for(i=0;i<=n;i++){
+   suma+=tablica[i];
+}
+cout<<"suma wynosi "<<suma<<endl;
+for(i=0;i<n;i++){
+    srednia=suma/50;
+}
+cout<<endl;
+
+cout<<"srednia wynosi "<<srednia<<endl;
+
+cout<<endl;
+
+for(i=0;i<=n;i++){
+if(tablica[i] > najwieksza)
+najwieksza= tablica[i];
+}
+cout<<"najwieksza liczba ze zbioru to "<<najwieksza<<endl;
+
+cout<<endl;
+
+for(i=0;i<=n;i++){
+if(tablica[i] < najmniejsza)
+najmniejsza= tablica[i];
+}
+cout<<"najmniejsza liczba ze zbioru to "<<najmniejsza<<endl;
+
+
+    return 0;
+}
